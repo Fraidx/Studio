@@ -1,0 +1,256 @@
+.section-reviews{
+    margin-bottom: 100px;
+    position: relative;
+    background: url('../img/workplace2.jpg') center;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    &:after{
+        opacity: .8;
+        z-index: 1;
+        background: $gradient;
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &-slider{
+        position: relative;
+        z-index: 2;
+        width: calc(100% - 60px);
+        height: 100%;
+        margin: 0 auto;
+        .comment{
+            position: relative;
+            height: 400px;
+            &-wrap{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                .comment-inner{
+                    width: 768px;
+                    &-up{
+                        display: flex;
+                        width: 244px;
+                        height: 96px;
+                        img{
+                            background: url('../img/first.png');
+                            flex-shrink: 0;
+                            width: 96px;
+                            height: 96px;
+                            border-radius: 48px;
+                        }
+                        &-info{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            padding-left: 10px;
+                            p{
+                                margin: 0;
+                                @include font-openSans;
+                                color: #fff;
+                                line-height: 26px;
+                            }
+                            &__name{
+                                font-size: 20px;
+                            }
+                            &__job{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    &-down{
+                        @include font-openSans;
+                        color: #fff;
+                        width: 100%;
+                        .text{
+                            font-size: 20px;
+                            font-style: italic;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+// == for tabled device == //
+@media screen and (min-width: 479px) and  (max-width: 800px){
+    .section-reviews{
+        margin-bottom: 100px;
+        position: relative;
+        background: url('../img/workplace2.jpg') center;
+        background-size: cover;
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+        &:after{
+            opacity: .8;
+            z-index: 1;
+            background: $gradient;
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &-slider{
+            position: relative;
+            z-index: 2;
+            width: calc(100% - 60px);
+            height: 100%;
+            margin: 0 auto;
+            .comment{
+                position: relative;
+                height: 400px;
+                &-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    .comment-inner{
+                        width: 100%;
+                        &-up{
+                            display: flex;
+                            width: 244px;
+                            height: 96px;
+                            img{
+                                background: url('../img/first.png');
+                                flex-shrink: 0;
+                                width: 96px;
+                                height: 96px;
+                                border-radius: 48px;
+                            }
+                            &-info{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                padding-left: 10px;
+                                p{
+                                    margin: 0;
+                                    @include font-openSans;
+                                    color: #fff;
+                                    line-height: 26px;
+                                }
+                                &__name{
+                                    font-size: 20px;
+                                }
+                                &__job{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        &-down{
+                            @include font-openSans;
+                            color: #fff;
+                            width: 100%;
+                            .text{
+                                font-size: 20px;
+                                font-style: italic;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }   
+}
+@media screen and (max-width: 479px){
+    .section-reviews{
+        margin-bottom: 100px;
+        position: relative;
+        background: url('../img/workplace2.jpg') center;
+        background-size: cover;
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+        &:after{
+            opacity: .8;
+            z-index: 1;
+            background: $gradient;
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &-slider{
+            position: relative;
+            z-index: 2;
+            width: calc(100% - 60px);
+            height: 100%;
+            margin: 0 auto;
+            .comment{
+                position: relative;
+                height: 400px;
+                &-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    .comment-inner{
+                        width: 100%;
+                        &-up{
+                            display: flex;
+                            justify-content: center;
+                            width: 100%;
+                            height: 96px;
+                            img{
+                                background: url('../img/first.png');
+                                flex-shrink: 0;
+                                width: 96px;
+                                height: 96px;
+                                border-radius: 48px;
+                            }
+                            &-info{
+                                display: none;
+                                flex-direction: column;
+                                justify-content: center;
+                                padding-left: 10px;
+                                p{
+                                    margin: 0;
+                                    @include font-openSans;
+                                    color: #fff;
+                                    line-height: 26px;
+                                }
+                                &__name{
+                                    font-size: 20px;
+                                }
+                                &__job{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        &-down{
+                            text-align: center;
+                            @include font-openSans;
+                            color: #fff;
+                            width: 100%;
+                            .text{
+                                font-size: 20px;
+                                font-style: italic;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }   
+}

@@ -1,0 +1,403 @@
+.section-aboutUs{
+    width: 100%;
+    height: 806px;
+    .section-inner{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin:  0 auto;
+        &-img{
+            position: relative;
+            background: url('../img/workspace.jpg') center;
+            background-size: cover;
+            flex-basis: 60%;
+            &:after{
+                content: '';
+                opacity: 0.4;
+                position: absolute;
+                top: 0;
+                background: linear-gradient(to right, #8A0BDB,#E13BFF,#234EDB);
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-info{
+            flex-basis: 40%;
+            padding: 83px 181px 85px 110px;
+            &__heading{
+                margin-left: 45px;
+                position: relative;
+                @include font-openSans;
+                color: $colorFont-3;
+                font-style: italic;
+                font-size: 20px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    top: 12px;
+                    left: -45px;
+                    background: $gradient;
+                    width: 28px;
+                    height: 2px;
+                }
+            }
+            &__title{
+                margin-top: 26px;
+                @include font-nunito;
+                color: #1F1F1F;
+                font-size: 42px;
+            }
+            &__text{
+                color: $colorFont-3;
+                letter-spacing: 1px;
+                margin-top: 44px;
+                @include font-openSans;
+                font-size: 16px;
+            }
+        }
+        &-infoTwo{
+            width: 413px;
+            margin-top: 48px;
+            &__title{
+                color: $colorFont-3;
+                @include font-nunito;
+                font-size: 20px;
+            }
+            &-examples{
+                margin-top: 30px;
+                &__bar{
+                    margin-bottom: 25px;
+                    position: relative;
+                    background: linear-gradient(to right, #8A0BDB,#234EDB,#0BDBA3);
+                    width: 100%;
+                    height: 7px;
+                    margin-top: 5px;
+                }
+                .ps{
+                    &:after{
+                        @include font-openSans;
+                        content: '99%';
+                        position: absolute;
+                        right: 0;
+                        bottom: -30px;
+                        font-size: 16px;
+                    }
+                }
+                .ai{
+                    width: 298px;
+                    &:after{
+                        @include font-openSans;
+                        content: '70%';
+                        position: absolute;
+                        right: 0;
+                        bottom: -30px;
+                        font-size: 16px;
+                    }
+                }
+                .seo{
+                    widows: 384px;
+                    &:after{
+                        @include font-openSans;
+                        content: '80%';
+                        position: absolute;
+                        right: 0;
+                        bottom: -30px;
+                        font-size: 16px;
+                    }
+                }
+                .wp{
+                    width: 286px;
+                    &:after{
+                        @include font-openSans;
+                        content: '60%';
+                        position: absolute;
+                        right: 0;
+                        bottom: -30px;
+                        font-size: 16px;
+                    }
+                }
+                label{
+                    color: #5A5A5A;
+                    @include font-openSans;
+                    position: relative;
+                    top: -10px;
+                    display: block;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px){
+    .section-aboutUs{
+        width: 100%;
+        height: 806px;
+        .section-inner{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin:  0 auto;
+            &-img{
+                position: relative;
+                background: url('../img/workspace.jpg') center;
+                background-size: cover;
+                flex-basis: 30%;
+                &:after{
+                    content: '';
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 0;
+                    background: linear-gradient(to right, #8A0BDB,#E13BFF,#234EDB);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-info{
+                flex-basis: 70%;
+                padding: 83px 181px 85px 110px;
+                &__heading{
+                    margin-left: 45px;
+                    position: relative;
+                    @include font-openSans;
+                    color: $colorFont-3;
+                    font-style: italic;
+                    font-size: 20px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 12px;
+                        left: -45px;
+                        background: $gradient;
+                        width: 28px;
+                        height: 2px;
+                    }
+                }
+                &__title{
+                    margin-top: 26px;
+                    @include font-nunito;
+                    color: #1F1F1F;
+                    font-size: 42px;
+                }
+                &__text{
+                    color: $colorFont-3;
+                    letter-spacing: 1px;
+                    margin-top: 44px;
+                    @include font-openSans;
+                    font-size: 16px;
+                }
+            }
+            &-infoTwo{
+                width: 413px;
+                margin-top: 48px;
+                &__title{
+                    color: $colorFont-3;
+                    @include font-nunito;
+                    font-size: 20px;
+                }
+                &-examples{
+                    margin-top: 30px;
+                    &__bar{
+                        margin-bottom: 25px;
+                        position: relative;
+                        background: linear-gradient(to right, #8A0BDB,#234EDB,#0BDBA3);
+                        width: 100%;
+                        height: 7px;
+                        margin-top: 5px;
+                    }
+                    .ps{
+                        &:after{
+                            @include font-openSans;
+                            content: '99%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    .ai{
+                        width: 298px;
+                        &:after{
+                            @include font-openSans;
+                            content: '70%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    .seo{
+                        widows: 384px;
+                        &:after{
+                            @include font-openSans;
+                            content: '80%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    .wp{
+                        width: 286px;
+                        &:after{
+                            @include font-openSans;
+                            content: '60%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    label{
+                        color: #5A5A5A;
+                        @include font-openSans;
+                        position: relative;
+                        top: -10px;
+                        display: block;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 497px){
+    .section-aboutUs{
+        width: 100%;
+        height: 806px;
+        .section-inner{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            margin:  0 auto;
+            &-img{
+                display: none;
+                position: relative;
+                background: url('../img/workspace.jpg') center;
+                background-size: cover;
+                flex-basis: 60%;
+                &:after{
+                    content: '';
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 0;
+                    background: linear-gradient(to right, #8A0BDB,#E13BFF,#234EDB);
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            &-info{
+                flex-basis: 100%;
+                padding: 0 20px;
+                &__heading{
+                    display: none;
+                    margin-top: 40px;
+                    margin-left: 45px;
+                    position: relative;
+                    @include font-openSans;
+                    color: #1F1F1F;
+                    font-style: italic;
+                    font-size: 32px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 22px;
+                        left: -45px;
+                        background: linear-gradient(to right, #0BDBA3,#234EDB,#8A0BDB);
+                        width: 28px;
+                        height: 2px;
+                    }
+                }
+                &__title{
+                    text-align: center;
+                    //display: none;
+                    margin-top: 26px;
+                    @include font-nunito;
+                    color: #1F1F1F;
+                    font-size: 42px;
+                }
+                &__text{
+                    padding: 0 20px;
+                    color: $colorFont-3;
+                    letter-spacing: 1px;
+                    margin-top: 44px;
+                    @include font-openSans;
+                    font-size: 16px;
+                }
+            }
+            &-infoTwo{
+                width: 100%;
+                margin-top: 48px;
+                &__title{
+                    color: $colorFont-3;
+                    @include font-nunito;
+                    font-size: 20px;
+                }
+                &-examples{
+                    margin-top: 30px;
+                    &__bar{
+                        margin-bottom: 25px;
+                        position: relative;
+                        background: linear-gradient(to right, #8A0BDB,#234EDB,#0BDBA3);
+                        width: 100%;
+                        height: 7px;
+                        margin-top: 5px;
+                    }
+                    .ps{
+                        &:after{
+                            @include font-openSans;
+                            content: '99%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    .ai{
+                        width: 298px;
+                        &:after{
+                            @include font-openSans;
+                            content: '70%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    .seo{
+                        widows: 384px;
+                        &:after{
+                            @include font-openSans;
+                            content: '80%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    .wp{
+                        width: 286px;
+                        &:after{
+                            @include font-openSans;
+                            content: '60%';
+                            position: absolute;
+                            right: 0;
+                            bottom: -30px;
+                            font-size: 16px;
+                        }
+                    }
+                    label{
+                        color: #5A5A5A;
+                        @include font-openSans;
+                        position: relative;
+                        top: -10px;
+                        display: block;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

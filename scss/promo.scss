@@ -1,0 +1,390 @@
+
+.section-promo{
+    background-size: cover;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    color: $colorFont-1;
+    width: 100%;
+    height: 100vh;
+    animation: show 2s;
+    &:after{
+        position: absolute;
+        background: rgba(41,41,41,.5);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        content: '';
+    }
+    .section-inner{
+        color: $colorFont-2;
+        position: relative;
+        z-index: 2;
+        width: 1180px;
+        max-width: calc(100% - 20px);
+        height: 100%;
+        margin:  0 auto;
+        .section-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            width: 100%;
+            height: 65px;
+            &__logo{
+                @include font-nunito;
+                font-weight: normal;
+                font-size: 49px;
+            }
+            &__list{
+                @include font-nunito;
+                font-weight: normal;
+                font-size: 19px;
+                nav{
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        li{
+                            margin-left: 40px;
+                            a{
+                                color: $colorFont-2; 
+                                text-decoration: none;
+                                transition: color .2s;
+                            }
+                            &:hover{
+                                a{
+                                    color: rgba(255,255,255,.8);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .section-promo-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            @include font-nunito;
+            width: 836px;
+            min-height: 322px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            .section-promo__title{
+                font-size: 93px;
+            }
+            .section-promo__subtitle{
+                @include font-openSans;
+                margin-top: 33px;
+                font-size: 20px;
+                font-style: italic;
+                letter-spacing: 1px;
+            }
+            .section-promo__btn{
+                box-sizing: border-box;
+                color: #fff;
+                font-size: 15px;
+                background: $gradient;
+                display: flex;
+                align-items: center;
+                margin-top: 90px;
+                border-radius: 31px;
+                text-decoration: none;
+                padding: 10px 10px;
+                .wrap{
+                    background: rgba(31,31,31,1);
+                    text-align: center;
+                    border-radius: 22px;
+                    line-height: 36px;
+                    height: 36px;
+                    width: 170px;
+                    transition: all .3s;
+                }
+                &:hover{
+                    .wrap{
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+        .section-promo__iconScroll{
+            position: absolute;
+            bottom: 31px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+    }
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+// == for tabled device == //
+@media screen and (min-width: 479px) and  (max-width: 800px){
+
+    .section-promo{
+        background-size: cover;
+        position: relative;
+        top: 0;
+        z-index: 0;
+        color: $colorFont-1;
+        width: 100%;
+        height: 100vh;
+        animation: show 2s;
+        &:after{
+            position: absolute;
+            background: rgba(41,41,41,.5);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+        }
+        .section-inner{
+            color: $colorFont-2;
+            position: relative;
+            z-index: 2;
+            width: 1180px;
+            max-width: calc(100% - 20px);
+            height: 100%;
+            margin:  0 auto;
+            .section-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                width: 100%;
+                height: 65px;
+                &__logo{    
+                    @include font-nunito;
+                    font-weight: normal;
+                    font-size: 24px;
+                }
+                &__list{
+                    background: url('../icons/menu.png');
+                    background-size: cover;
+                    width: 30px;
+                    height: 30px;
+                    transform: rotate(90deg);
+                    @include font-nunito;
+                    font-weight: normal;
+                    font-size: 11px;
+                    nav{
+                        display: none;
+                        ul{
+                            display: flex;
+                            list-style: none;
+                            li{
+                                margin-left: 40px;
+                                a{
+                                    color: $colorFont-2; 
+                                    text-decoration: none;
+                                    transition: color .2s;
+                                }
+                                &:hover{
+                                    a{
+                                        color: rgba(255,255,255,.8);
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+            }
+            .section-promo-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                @include font-nunito;
+                width: calc(100% - 40px);
+                min-height: 322px;
+                position: absolute;
+                left: 50%;
+                top: 55%;
+                transform: translate(-50%,-50%);
+                .section-promo__title{
+                    font-size: 64px;
+                }
+                .section-promo__subtitle{
+                    @include font-openSans;
+                    margin-top: 33px;
+                    font-size: 26px;
+                    font-style: italic;
+                }
+                .section-promo__btn{
+                    box-sizing: border-box;
+                    color: #fff;
+                    font-size: 15px;
+                    background: $gradient;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 90px;
+                    border-radius: 31px;
+                    text-decoration: none;
+                    padding: 10px 10px;
+                    .wrap{
+                        background: rgba(31,31,31,1);
+                        text-align: center;
+                        border-radius: 22px;
+                        line-height: 36px;
+                        height: 36px;
+                        width: 170px;
+                        transition: all .3s;
+                    }
+                    &:hover{
+                        .wrap{
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+            }
+            .section-promo__iconScroll{
+                display: none;
+                position: absolute;
+                bottom: 31px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+        }
+    }
+
+}
+
+// == for mobile device == //
+@media screen and (max-width: 479px){
+
+    .section-promo{
+        background-size: cover;
+        position: relative;
+        top: 0;
+        z-index: 0;
+        color: $colorFont-1;
+        width: 100%;
+        height: 100vh;
+        animation: show 2s;
+        &:after{
+            position: absolute;
+            background: rgba(41,41,41,.5);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            content: '';
+        }
+        .section-inner{
+            color: $colorFont-2;
+            position: relative;
+            z-index: 2;
+            width: 1180px;
+            max-width: calc(100% - 20px);
+            height: 100%;
+            margin:  0 auto;
+            .section-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+                width: 100%;
+                height: 65px;
+                &__logo{    
+                    @include font-nunito;
+                    font-weight: normal;
+                    font-size: 24px;
+                }
+                &__list{
+                    background: url('../icons/menu.png');
+                    background-size: cover;
+                    width: 30px;
+                    height: 30px;
+                    transform: rotate(90deg);
+                    @include font-nunito;
+                    font-weight: normal;
+                    font-size: 11px;
+                    nav{
+                        display: none;
+                        ul{
+                            display: flex;
+                            list-style: none;
+                            li{
+                                margin-left: 40px;
+                                a{
+                                    color: $colorFont-2; 
+                                    text-decoration: none;
+                                    transition: color .2s;
+                                }
+                                &:hover{
+                                    a{
+                                        color: rgba(255,255,255,.8);
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+            }
+            .section-promo-content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                @include font-nunito;
+                width: 100%;
+                min-height: 322px;
+                position: absolute;
+                left: 50%;
+                top: 55%;
+                transform: translate(-50%,-50%);
+                .section-promo__title{
+                    font-size: 33px;
+                }
+                .section-promo__subtitle{
+                    @include font-openSans;
+                    margin-top: 33px;
+                    font-size: 16px;
+                    font-style: italic;
+                }
+                .section-promo__btn{
+                    box-sizing: border-box;
+                    color: #fff;
+                    font-size: 15px;
+                    background: $gradient;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 90px;
+                    border-radius: 31px;
+                    text-decoration: none;
+                    padding: 10px 10px;
+                    .wrap{
+                        background: rgba(31,31,31,1);
+                        text-align: center;
+                        border-radius: 22px;
+                        line-height: 36px;
+                        height: 36px;
+                        width: 170px;
+                        transition: all .3s;
+                    }
+                    &:hover{
+                        .wrap{
+                            transform: scale(0.95);
+                        }
+                    }
+                }
+            }
+            .section-promo__iconScroll{
+                display: none;
+                position: absolute;
+                bottom: 31px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+        }
+    }
+
+}

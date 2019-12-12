@@ -1,0 +1,206 @@
+.section-feedback{
+    position: relative;
+    background: url('../img/bridge2.jpg') left;
+    background-size: cover;
+    width: 100%;
+    height: 412px;
+    &:after{
+        opacity: .8;
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        background: $gradient;
+        width: 100%;
+        height: 100%;
+    }
+    .section-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        width: 1180px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .section-feedback__title{
+        color: #fff;
+        @include font-openSans;
+        font-size: 32px;
+        margin-top: 81px;
+    }
+    .section-feedback-wrap{
+        margin-top: 41px;
+        input{
+            font-family: sans-serif;
+            margin-left: 15px;
+            height: 50px;
+            border: none;
+            box-sizing: border-box;
+        }
+        .name,.email{
+            padding-left: 16px;
+            background: #fff;
+            box-shadow: 0 0 10px 0 rgba(1,1,1,.16);
+            border-radius: 4px;
+        }
+        .name{
+            width: 240px;
+        }
+        .email{
+            width: 450px;
+        }
+        .btn{
+            background: #0BDBA3;
+            color: #fff;
+            width: 177px;
+            border-radius: 50px;
+        }
+    }
+    .section-feedback-socials{
+        margin-top: 60px;
+        display: flex;
+        img{
+            margin-left: 20px;
+        }
+    }
+}
+@media screen and (min-width: 479px) and (max-width: 800px){
+    .section-feedback{
+        position: relative;
+        background: url('../img/bridge2.jpg') left;
+        background-size: cover;
+        width: 100%;
+        min-height: 440px;
+        &:after{
+            opacity: .8;
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            background: $gradient;
+            width: 100%;
+            height: 100%;
+        }
+        .section-inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            width: calc(100% - 40px);
+            height: 100%;
+            margin: 0 auto;
+        }
+        .section-feedback__title{
+            color: #fff;
+            @include font-openSans;
+            font-size: 32px;
+            margin-top: 81px;
+        }
+        .section-feedback-wrap{
+            margin-top: 41px;
+            input{
+                font-family: sans-serif;
+                margin-left: 15px;
+                height: 50px;
+                border: none;
+                box-sizing: border-box;
+            }
+            .name,.email{
+                padding-left: 16px;
+                background: #fff;
+                box-shadow: 0 0 10px 0 rgba(1,1,1,.16);
+                border-radius: 4px;
+            }
+            .name{
+                width: 240px;
+            }
+            .email{
+                width: 450px;
+            }
+            .btn{
+                background: #0BDBA3;
+                color: #fff;
+                width: 177px;
+                margin-top: 40px;
+                border-radius: 50px;
+            }
+        }
+        .section-feedback-socials{
+            margin-top: 40px;
+            display: flex;
+            img{
+                margin-left: 20px;
+            }
+        }
+    }    
+}
+@media screen and (max-width: 479px){
+    .section-feedback{
+        position: relative;
+        background: url('../img/bridge2.jpg') left;
+        background-size: cover;
+        width: 100%;
+        min-height: 612px;
+        &:after{
+            opacity: .8;
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            background: $gradient;
+            width: 100%;
+            height: 100%;
+        }
+        .section-inner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            width: calc(100% - 40px);
+            height: 100%;
+            margin: 0 auto;
+        }
+        .section-feedback__title{
+            color: #fff;
+            @include font-openSans;
+            font-size: 32px;
+            margin-top: 81px;
+        }
+        .section-feedback-wrap{
+            display: flex;
+            flex-direction: column;
+            margin-top: 41px;
+            input{
+                font-family: sans-serif;
+                margin-top: 10px;
+                margin-left: 15px;
+                height: 50px;
+                border: none;
+                box-sizing: border-box;
+            }
+            .name,.email{
+                padding-left: 16px;
+                background: #fff;
+                box-shadow: 0 0 10px 0 rgba(1,1,1,.16);
+                border-radius: 4px;
+            }
+            .name{
+                width: 240px;
+            }
+            .email{
+                width: 320px;
+            }
+            .btn{
+                background: #0BDBA3;
+                color: #fff;
+                width: 177px;
+                margin-top: 30px;
+                border-radius: 50px;
+            }
+        }
+    }    
+}
