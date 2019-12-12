@@ -1,2 +1,2 @@
 # Studio
-![layout image](img/mackbook.png)
+![layout image](img/macbook.png)
