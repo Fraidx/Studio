@@ -1,7 +1,16 @@
-# Studio
-My new project made on a free layout. 
-I used methodology BEM, simple parallax and slink - jquery plagin for slider. Site is crossbrowser and adaptive.
-If you not it is difficult the please write your assessment of and opinion, point to the that need correct :)
+# Afrianska
+See a work: https://triplicates.github.io/Studio/
 
-  [Site](https://triplicates.github.io/Studio/)
-![layout image](img/macbook.png)
+ ### Description
+ This site is my second attempt at using BEM methodology. Also I used paralax effect and new library for me - Slick.io
+ The project has a number of shortcomings: 
+ * Low load speed for images
+ * Poor usage BEM methodology
+ 
+ ### Example
+ 
+ ![Afrianska](img/macbook.png)
+ 
+  ### Author 
+  (C) 2020 Sergeev Danil | telegram: @triplicates
+
