@@ -1,4 +1,4 @@
-# Afrianska
+# Studio
 See a work: https://triplicates.github.io/Studio/
 
  ### Description
@@ -9,7 +9,7 @@ See a work: https://triplicates.github.io/Studio/
  
  ### Example
  
- ![Afrianska](img/macbook.png)
+ ![Studio](img/macbook.png)
  
   ### Author 
   (C) 2020 Sergeev Danil | telegram: @triplicates
