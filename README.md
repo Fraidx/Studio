@@ -7,7 +7,7 @@ See a work: https://triplicates.github.io/Studio/
  * Low load speed for images
  * Poor usage BEM methodology
  
- ### Example
+ ### Screenshot
  
  ![Studio](img/macbook.png)
  
