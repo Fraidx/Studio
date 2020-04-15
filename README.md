@@ -20,5 +20,5 @@ See a work: https://triplicates.github.io/Studio/
  ![Studio](img/macbook.png)
  
   ### Author 
-  (C) 2020 Sergeev Danil | telegram: @triplicates
+  (C) 2020 Sergeev Danil | telegram: @triplicatesouls
 
