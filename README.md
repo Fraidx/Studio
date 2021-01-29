@@ -1,5 +1,5 @@
 # Studio
-See a work: https://triplicates.github.io/Studio/
+See a work: https://tripplicate.github.io/Studio/
 
  ### Description
  This site is my second attempt at using BEM methodology. Also I used paralax effect and new library for me - Slick.io
